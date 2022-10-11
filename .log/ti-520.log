@@ -1,0 +1,48 @@
+[22:44:02.803] Global cache location '/home/seija/.cache/typescript/4.8', safe file path '/home/seija/uni/pwmanager-front/node_modules/typescript/lib/typingSafeList.json', types map path /home/seija/uni/pwmanager-front/node_modules/typescript/lib/typesMap.json
+[22:44:02.804] Processing cache location '/home/seija/.cache/typescript/4.8'
+[22:44:02.804] Trying to find '/home/seija/.cache/typescript/4.8/package.json'...
+[22:44:02.806] Loaded content of '/home/seija/.cache/typescript/4.8/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.612"},"devDependencies":{"@types/babel__core":"^7.1.19","@types/babel__preset-env":"^7.9.2","@types/babel__register":"^7.17.0","@types/eslint":"^8.4.6","@types/eslint-config-prettier":"^6.11.0","@types/eslint-plugin-prettier":"^3.1.0","@types/mocha":"^9.1.1","@types/pg":"^8.6.5","@types/prettier":"^2.7.0","@types/rimraf":"^3.0.2","@types/source-map-support":"^0.5.6","@types/supertest":"^2.0.12","@types/uglify-js":"^3.17.0"}}
+[22:44:02.806] Loaded content of '/home/seija/.cache/typescript/4.8/package-lock.json'
+[22:44:02.823] Adding entry into typings cache: 'babel__core' => '/home/seija/.cache/typescript/4.8/node_modules/@types/babel__core/index.d.ts'
+[22:44:02.827] Adding entry into typings cache: 'babel__preset-env' => '/home/seija/.cache/typescript/4.8/node_modules/@types/babel__preset-env/index.d.ts'
+[22:44:02.831] Adding entry into typings cache: 'babel__register' => '/home/seija/.cache/typescript/4.8/node_modules/@types/babel__register/index.d.ts'
+[22:44:02.834] Adding entry into typings cache: 'eslint' => '/home/seija/.cache/typescript/4.8/node_modules/@types/eslint/index.d.ts'
+[22:44:02.837] Adding entry into typings cache: 'eslint-config-prettier' => '/home/seija/.cache/typescript/4.8/node_modules/@types/eslint-config-prettier/index.d.ts'
+[22:44:02.838] Adding entry into typings cache: 'eslint-plugin-prettier' => '/home/seija/.cache/typescript/4.8/node_modules/@types/eslint-plugin-prettier/index.d.ts'
+[22:44:02.842] Adding entry into typings cache: 'mocha' => '/home/seija/.cache/typescript/4.8/node_modules/@types/mocha/index.d.ts'
+[22:44:02.843] Adding entry into typings cache: 'pg' => '/home/seija/.cache/typescript/4.8/node_modules/@types/pg/index.d.ts'
+[22:44:02.846] Adding entry into typings cache: 'prettier' => '/home/seija/.cache/typescript/4.8/node_modules/@types/prettier/index.d.ts'
+[22:44:02.848] Adding entry into typings cache: 'rimraf' => '/home/seija/.cache/typescript/4.8/node_modules/@types/rimraf/index.d.ts'
+[22:44:02.850] Adding entry into typings cache: 'source-map-support' => '/home/seija/.cache/typescript/4.8/node_modules/@types/source-map-support/index.d.ts'
+[22:44:02.852] Adding entry into typings cache: 'supertest' => '/home/seija/.cache/typescript/4.8/node_modules/@types/supertest/index.d.ts'
+[22:44:02.854] Adding entry into typings cache: 'uglify-js' => '/home/seija/.cache/typescript/4.8/node_modules/@types/uglify-js/index.d.ts'
+[22:44:02.854] Finished processing cache location '/home/seija/.cache/typescript/4.8'
+[22:44:02.855] Process id: 527
+[22:44:02.855] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[22:44:02.855] validateDefaultNpmLocation: false
+[22:44:02.855] Npm config file: /home/seija/.cache/typescript/4.8/package.json
+[22:44:02.855] Updating types-registry npm package...
+[22:44:02.855] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[22:44:04.071]     Succeeded. stdout:
+    
+    changed 1 package, and audited 39 packages in 990ms
+
+found 0 vulnerabilities
+
+[22:44:04.071] Updated types-registry npm package
+[23:36:57.962] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/seija/uni/pwmanager-front/components/Crud","kind":"discover"}
+[23:36:57.974] Loaded safelist from types map file '/home/seija/uni/pwmanager-front/node_modules/typescript/lib/typesMap.json'
+[23:36:57.974] Explicitly included types: []
+[23:36:57.974] Inferred typings from unresolved imports: []
+[23:36:57.975] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/seija/uni/pwmanager-front/components/Crud/bower_components","/home/seija/uni/pwmanager-front/components/Crud/node_modules"]}
+[23:36:57.975] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/seija/uni/pwmanager-front/components/Crud/bower_components","/home/seija/uni/pwmanager-front/components/Crud/node_modules"]}
+[23:36:57.975] DirectoryWatcher:: Added:: WatchInfo: /home/seija/uni/pwmanager-front/components/Crud/bower_components
+[23:36:57.976] DirectoryWatcher:: Added:: WatchInfo: /home/seija/uni/pwmanager-front/components/Crud/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[23:36:57.978] Elapsed:: 2.145200001075864ms DirectoryWatcher:: Added:: WatchInfo: /home/seija/uni/pwmanager-front/components/Crud/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[23:36:57.978] DirectoryWatcher:: Added:: WatchInfo: /home/seija/uni/pwmanager-front/components/Crud/node_modules
+[23:36:57.978] DirectoryWatcher:: Added:: WatchInfo: /home/seija/uni/pwmanager-front/components/Crud/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[23:36:57.978] Elapsed:: 0.10739999823272228ms DirectoryWatcher:: Added:: WatchInfo: /home/seija/uni/pwmanager-front/components/Crud/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[23:36:57.978] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[23:36:57.979] Response has been sent.
+[23:36:57.979] No new typings were requested as a result of typings discovery
