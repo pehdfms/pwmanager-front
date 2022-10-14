@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { PasswordData } from "api/types";
-import { getPassword } from "api";
 import { CenteredDiv } from "styles/common";
 import { PasswordForm } from "components/Crud/PasswordForm";
 
@@ -10,7 +9,7 @@ function SavePage() {
   const { id } = router.query;
 
   const [passwordData, setPasswordData] = useState<Partial<PasswordData>>({
-    url: "",
+    site: "",
     description: "",
     password: "",
   });

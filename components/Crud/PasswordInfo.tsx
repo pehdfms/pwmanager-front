@@ -3,8 +3,8 @@ import { FlexRow, RoundedCorner } from "styles/common";
 
 interface PasswordInfoProps {
   id: number;
-  url: string;
-  description: string;
+  name: string;
+  site: string;
   password: string;
 }
 
@@ -38,20 +38,15 @@ const DeleteButton = styled(Option)`
   background-color: #bb1000;
 `;
 
-export function PasswordInfo({
-  id,
-  url,
-  description,
-  password,
-}: PasswordInfoProps) {
+export function PasswordInfo({ id, name, site, password }: PasswordInfoProps) {
   function handleDelete() {
     console.log(id);
   }
 
   return (
     <>
-      <Info>{url}</Info>
-      <Info>{description}</Info>
+      <Info>{name}</Info>
+      <Info>{site}</Info>
       <Info>{password}</Info>
 
       <FlexRow style={{ gap: "10px" }}>

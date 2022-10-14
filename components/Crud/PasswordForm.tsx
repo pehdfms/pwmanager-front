@@ -1,8 +1,8 @@
-import { savePassword, updatePassword } from "api";
 import { PasswordData } from "api/types";
 import { useState, useEffect } from "react";
 import { FlexColumn, FlexRow, RoundedCorner } from "styles/common";
 import styled from "styled-components";
+import FetchService from "api/fetch.service";
 
 const StyledForm = styled(FlexColumn)`
   ${RoundedCorner}
@@ -113,12 +113,20 @@ export function PasswordForm(props: Partial<PasswordData>) {
     }, SHOW_ALERT_TIMEOUT);
   }
 
+  function savePassword(data: {
+    name: string;
+    site: string;
+    password: string;
+  }) {
+    FetchService.post("/passwords", data);
+  }
+
   function handleSave() {
-    const { url, description, password } = passwordData;
-    if (url && description && password) {
+    const { name, site, password } = passwordData;
+    if (name && site && password) {
       isSaveForm
         ? // rewriting these fields manually otherwise typescript complains
-          savePassword({ url, description, password })
+          savePassword({ name, site, password })
         : updatePassword(passwordData);
       success();
     } else {
@@ -161,13 +169,13 @@ export function PasswordForm(props: Partial<PasswordData>) {
       <h1>{isSaveForm ? "Save" : "Update"} Password</h1>
 
       <FlexColumn style={{ width: "50%" }}>
-        <label htmlFor="url">Url:</label>
+        <label htmlFor="name">Name:</label>
         <input
-          type="url"
-          id="url"
-          name="url"
-          placeholder="Type your url"
-          value={passwordData.url}
+          type="name"
+          id="name"
+          name="name"
+          placeholder="Type your name"
+          value={passwordData.name}
           onInput={(e) => handleInput(e.target as HTMLInputElement)}
           required
         />
@@ -189,13 +197,13 @@ export function PasswordForm(props: Partial<PasswordData>) {
       </FlexColumn>
 
       <FlexColumn style={{ width: "50%" }}>
-        <label htmlFor="description">Description:</label>
+        <label htmlFor="site">Site:</label>
         <input
           type="text"
-          id="description"
-          name="description"
-          placeholder="Type your description"
-          value={passwordData.description}
+          id="site"
+          name="site"
+          placeholder="Type your site"
+          value={passwordData.site}
           onChange={(e) => handleInput(e.target as HTMLInputElement)}
           required
         />

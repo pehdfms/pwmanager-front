@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FlexColumn, RoundedCorner } from "../../styles/common";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import UserService from "../../api/user.service";
 
 const StyledForm = styled(FlexColumn)`
   ${RoundedCorner}
@@ -45,9 +46,10 @@ export function LoginForm() {
       return;
     }
 
-    // TODO actually login
-    console.log(username, password);
-    router.push("/");
+    UserService.login({ username, password }).then(() => {
+      const returnUrl = router.query.returnUrl || "/";
+      router.push(returnUrl as string);
+    });
   }
 
   return (
